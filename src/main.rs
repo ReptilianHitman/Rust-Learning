@@ -1,4 +1,5 @@
 fn main() {
-    let x: i32 = 5;
-    println!("{}", x);
+    let args: Vec<String> = std::env::args().collect();
+
+    println!("{:?}", args);
 }
